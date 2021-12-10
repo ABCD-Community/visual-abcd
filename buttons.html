@@ -65,65 +65,131 @@ function includeHTML() {
     <!-- System -->
     <div class="main container-fluid">
 
+
 <div class="row">
     <div class="col-3 sidebar">
       <div w3-include-html="menu.html"></div>
     </div>  
 
     <div class="col-8 p-3">
-      <h1>Basic layout</h1>
-      <p>
-        The basic ABCD layout is composed of lines.
-These are divided into:</p>
-<li>Header</li>
-<li>Module control</li>
-<li>Toolbars</li>
-<li>Main screen</li>
-<li>Footer</li>
 
-      <pre>
-        <code class="language-plaintext">
+<h1>Button colours</h1>
+
+  <button class="bt-blue">bt-blue</button>
+  <button class="bt-red">bt-red</button>
+  <button class="bt-green">bt-green</button>
+  <button class="bt-yellow">bt-yellow</button>
+  <button class="bt-gray">bt-gray</button>
+  <button class="bt-dark">bt-dark</button>  
+  <button class="bt-default">bt-default</button>
+
+<br>
+<pre>
+  <code class="language-plaintext">
 <textarea>
-<body>
-<!-- Head -->
-<div class="headLevel"></div>
+  <button class="bt-blue">bt-blue</button>
+  <button class="bt-red">bt-red</button>
+  <button class="bt-green">bt-green</button>
+  <button class="bt-yellow">bt-yellow</button>
+  <button class="bt-gray">bt-gray</button>
+  <button class="bt-dark">bt-dark</button>  
+  <button class="bt-default">bt-default</button>
+    </textarea>
+  </code>
+</pre>
 
-<!-- Information level Module -->
-<div class="moduleLevel"></div>
 
-<!-- Information level action -->
-<div class="actionLevel"></div>
+<hr>
 
-<!-- System -->
-<div class="main"></div>
+      <h1>Button types</h1>
+      <hr>
 
-<!-- Footer -->
-<footer class="footer"></footer>
+<h3>Input type=button</h3>  
+      <input type="button" name="button" value="Input"> <br>
+<pre>
+  <code class="language-plaintext">
+    <textarea>
+      <input type="button" name="button" value="Input">
+    </textarea>
+  </code>
+</pre>
 
-<!--<script src="index.js"></script>-->
-</body>
-          </textarea>
-        </code>
-      </pre>
+<hr>
+
+<h3>Input type=submit</h3>  
+      <input type="submit" name="submit" value="Input"> <br>
+
+<pre>
+  <code class="language-plaintext">
+    <textarea>
+      <input type="submit" name="submit" value="Input">
+    </textarea>
+  </code>
+</pre>
+
+<hr>
+
+<h3>Button</h3>  
+      <button> Button</button> <br>
+
+
+<pre>
+  <code class="language-plaintext">
+    <textarea>
+      <button>Button</button>
+    </textarea>
+  </code>
+</pre>
+
+<hr>
+
+<h3>Link like button</h3>  
+      <a href="#" class="bt">Link</a> <br>
+
+<pre>
+  <code class="language-plaintext">
+    <textarea>
+      <a href="#" class="bt">Link</a>
+    </textarea>
+  </code>
+</pre>
+
+<hr>
+
+
+
+<h1>Size</h1>
+
+  <button class="bt-red bt-sm">bt-sm</button>
+  <button class="bt-blue bt-lg">bt-lg</button>
+
+<br>
+<pre>
+  <code class="language-plaintext">
+    <textarea>
+      <button class="bt-blue">Button</button>
+    </textarea>
+  </code>
+</pre>
 
 
     </div>
     
 </div>
 
-    </div>
-  
+    </div><!--//main container-fluid-->
+    
     <!-- Footer -->
     <footer class="footer container-fluid">
       <div class="sysInfo"><span>ABCD v2.2.0-beta-0 + ... → 2021-11-04</span></div>
       <img src="assets/img/distributorLogo.png">
     </footer>
 
-
   <script>
     includeHTML();
   </script>     
 
+    
 	<!--<script src="index.js"></script>-->
   </body>
 </html>
