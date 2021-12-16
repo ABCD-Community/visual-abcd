@@ -9,8 +9,6 @@
 
 The logic of the ABCD layout is based on lines. Being from top to bottom:
 
-The logic of the ABCD layout is based on lines. Being from top to bottom:
-
 *   Header - where information and actions concerning the system are located;
 *   Module action line - Global information and actions concerning the screen in use;
 *   Screen action line - where the toolbar is, if needed.
