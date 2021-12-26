@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ABCD</title>
+
+    <link rel="stylesheet" href="assets/css/template.css">
+
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /*loop through a collection of all HTML elements:*/
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /*make an HTTP request using the attribute value as the file name:*/
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /*remove the attribute, and call this function once more:*/
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }      
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /*exit the function:*/
+      return;
+    }
+  }
+};
+</script>
+
+<link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+
+  </head>
+  <body>
+    <!-- Head -->
+    <div class="headLevel container-fluid color-white">
+      <div class="ABCD_logo"><img src="assets/img/logoabcd.png"></div>
+      <div class="sysInfo"><ul><li>ISO-8859-1</li></ul></div>
+    </div>
+    
+    <!-- Information level Module -->
+    <div class="moduleLevel container-fluid color-white">
+      <div>Module name</div>
+      <div>Module options</div>
+    </div>
+    
+    <!-- Information level action -->
+    <div class="actionLevel container-fluid">
+      <div>Toolbar</div>
+    </div>
+    
+    <!-- System -->
+    <div class="main container-fluid">
+
+<div class="row">
+    <div class="col-3 sidebar">
+      <div w3-include-html="menu.html"></div>
+    </div>  
+
+    <div class="col-8 p-3">
+      <h1>Colors</h1>
+      <p> Paragraph Main</p>
+
+<table>
+<tr><th width="50%">Class</th><th>Color</th></tr>
+<tr><td>--blue-abcd</td><td style="background:  var(--blue-abcd); width: 200px; height: 50px;"></td></tr>
+<tr><td>--bgmoduleInfo</td><td style="background: var(--bgmoduleInfo); width: 200px; height: 50px;"></td></tr>
+<tr><td>--toolbar-abcd</td><td style="background: var(--toolbar-abcd); width: 200px; height: 50px;"></td></tr>
+<tr><td>--cat-color</td><td style="background: var(--cat-color); width: 200px; height: 50px;"></td></tr>
+<tr><td>--acq-color</td><td style="background: var(--acq-color); width: 200px; height: 50px;"></td></tr>
+<tr><td>--loan-color</td><td style="background: var(--loan-color); width: 200px; height: 50px;"></td></tr>
+<tr><td>--abcd-blue</td><td style="background: var(--abcd-blue); width: 200px; height: 50px;"></td></tr>
+<tr><td>--abcd-indigo</td><td style="background: var(--abcd-indigo); width: 200px; height: 50px;"></td></tr>
+<tr><td>--abcd-purple</td><td style="background: var(--abcd-purple); width: 200px; height: 50px;"></td></tr>
+<tr><td>--abcd-pink</td><td style="background: var(--abcd-pink); width: 200px; height: 50px;"></td></tr>
+<tr><td>--abcd-red</td><td style="background: var(--abcd-red); width: 200px; height: 50px;"></td></tr>
+<tr><td>--abcd-orange</td><td style="background: var(--abcd-orange); width: 200px; height: 50px;"></td></tr>
+<tr><td>--abcd-yellow</td><td style="background: var(--abcd-yellow); width: 200px; height: 50px;"></td></tr>
+<tr><td>--abcd-green</td><td style="background: var(--abcd-green); width: 200px; height: 50px;"></td></tr>
+<tr><td>--abcd-teal</td><td style="background: var(--abcd-teal); width: 200px; height: 50px;"></td></tr>
+<tr><td>--abcd-cyan</td><td style="background: var(--abcd-cyan); width: 200px; height: 50px;"></td></tr>
+<tr><td>--abcd-white</td><td style="background: var(--abcd-white); width: 200px; height: 50px;"></td></tr>
+<tr><td>--abcd-gray</td><td style="background: var(--abcd-gray); width: 200px; height: 50px;"></td></tr>
+<tr><td>--abcd-gray-dark</td><td style="background: var(--abcd-gray-dark); width: 200px; height: 50px;"></td></tr>
+<tr><td>--abcd-gray-100</td><td style="background: var(--abcd-gray-100); width: 200px; height: 50px;"></td></tr>
+<tr><td>--abcd-gray-200</td><td style="background: var(--abcd-gray-200); width: 200px; height: 50px;"></td></tr>
+<tr><td>--abcd-gray-300</td><td style="background: var(--abcd-gray-300); width: 200px; height: 50px;"></td></tr>
+<tr><td>--abcd-gray-400</td><td style="background: var(--abcd-gray-400); width: 200px; height: 50px;"></td></tr>
+<tr><td>--abcd-gray-500</td><td style="background: var(--abcd-gray-500); width: 200px; height: 50px;"></td></tr>
+<tr><td>--abcd-gray-600</td><td style="background: var(--abcd-gray-600); width: 200px; height: 50px;"></td></tr>
+<tr><td>--abcd-gray-700</td><td style="background: var(--abcd-gray-700); width: 200px; height: 50px;"></td></tr>
+<tr><td>--abcd-gray-800</td><td style="background: var(--abcd-gray-800); width: 200px; height: 50px;"></td></tr>
+<tr><td>--abcd-gray-900</td><td style="background: var(--abcd-gray-900); width: 200px; height: 50px;"></td></tr>
+<tr><td>--abcd-primary</td><td style="background:  var(--abcd-primary); width: 200px; height: 50px;"></td></tr>
+<tr><td>--abcd-success</td><td style="background: var(--abcd-success); width: 200px; height: 50px;"></td></tr>
+<tr><td>--abcd-info</td><td style="background: var(--abcd-info); width: 200px; height: 50px;"></td></tr>
+<tr><td>--abcd-warning</td><td style="background: var(--abcd-warning); width: 200px; height: 50px;"></td></tr>
+<tr><td>--abcd-danger</td><td style="background: var(--abcd-danger); width: 200px; height: 50px;"></td></tr>
+<tr><td>--abcd-dark</td><td style="background: var(--abcd-dark); width: 200px; height: 50px;"></td></tr>
+<tr><td>--abcd-body-color</td><td style="background: var(--abcd-body-color); width: 200px; height: 50px;"></td></tr>
+
+
+
+</table>
+
+
+    </div>
+    
+</div>
+
+    </div>
+  
+    <!-- Footer -->
+    <footer class="footer container-fluid">
+      <div class="sysInfo"><span>ABCD v2.2 - 2021-12-16</span></div>
+      <img src="assets/img/distributorLogo.png">
+    </footer>
+
+
+  <script>
+    includeHTML();
+  </script>     
+
+	<!--<script src="index.js"></script>-->
+  </body>
+</html>
